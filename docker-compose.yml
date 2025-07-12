@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: verbum-reformat
+    environment:
+      POSTGRES_DB: verbum-reformata
+      POSTGRES_USER: developer
+      POSTGRES_PASSWORD: sola-scriptura
+    ports:
+      - '5432:5432'
